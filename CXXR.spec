@@ -50,7 +50,7 @@
 %global macrosdir %(d=%{_rpmconfigdir}/macros.d; [ -d $d ] || d=%{_sysconfdir}/rpm; echo $d)
 
 Name: R
-Version: 3.2.2
+Version: 3.2.3
 Release: 1%{?dist}
 Summary: A language for data analysis and graphics
 URL: http://www.r-project.org
@@ -957,6 +957,9 @@ R CMD javareconf \
 %postun -n libRmath -p /sbin/ldconfig
 
 %changelog
+* Mon Oct 05 2015 Unknown name <soerenmoeller2001@gmail.com> 3.2.3-1
+- new package built with tito
+
 * Fri Aug 14 2015 Tom Callaway <spot@fedoraproject.org> - 3.2.2-1
 - update to 3.2.2
 
