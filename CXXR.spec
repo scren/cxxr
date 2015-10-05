@@ -51,7 +51,7 @@
 
 Name: R
 Version: 3.2.2
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: A language for data analysis and graphics
 URL: http://www.r-project.org
 Source0: ftp://cran.r-project.org/pub/R/src/base/R-3/R-%{version}.tar.gz
@@ -957,6 +957,9 @@ R CMD javareconf \
 %postun -n libRmath -p /sbin/ldconfig
 
 %changelog
+* Mon Oct 05 2015 Sören Möller <soerenmoeller2001@gmail.com> 3.2.2-2
+- new package built with tito
+
 * Fri Aug 14 2015 Tom Callaway <spot@fedoraproject.org> - 3.2.2-1
 - update to 3.2.2
 
