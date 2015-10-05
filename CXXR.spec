@@ -51,7 +51,7 @@
 
 Name: R
 Version: 3.2.5
-Release: 2%{?dist}
+Release: 3%{?dist}
 Summary: A language for data analysis and graphics
 URL: http://www.r-project.org
 Source0: ftp://cran.r-project.org/pub/R/src/base/R-3/R-%{version}.tar.gz
@@ -957,13 +957,7 @@ R CMD javareconf \
 %postun -n libRmath -p /sbin/ldconfig
 
 %changelog
-* Mon Oct 05 2015 Sören Möller <soerenmoeller2001@gmail.com> 3.2.5-2
-- 
-
-* Mon Oct 05 2015 Sören Möller <soerenmoeller2001@gmail.com> 3.2.5-1
-- 
-
-* Mon Oct 05 2015 Sören Möller <soerenmoeller2001@gmail.com> 3.2.4-1
+* Mon Oct 05 2015 Sören Möller <soerenmoeller2001@gmail.com> 3.2.5-3
 - 
 
 * Mon Oct 05 2015 Unknown name <soerenmoeller2001@gmail.com> 3.2.3-1
