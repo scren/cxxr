@@ -1,7 +1,7 @@
 Summary:            A program that ejects removable media using software control
 Name:               CXXR
-Version:            2.1.5
-Release:            21%{?dist}
+Version:            2.1.6
+Release:            1%{?dist}
 License:            GPLv2+
 Group:              System Environment/Base
 Source:             https://github.com/scren/cxxr/archive/master.zip
@@ -37,5 +37,8 @@ ln -s ../bin/eject %{buildroot}/%{_sbindir}
 %{_mandir}/man1/*
 
 %changelog
+* Mon Oct 05 2015 Sören Möller <soerenmoeller2001@gmail.com> 2.1.6-1
+- Simple spec (soerenmoeller2001@gmail.com)
+
 * Tue Feb 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.1.5-21
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
