@@ -50,7 +50,7 @@
 %global macrosdir %(d=%{_rpmconfigdir}/macros.d; [ -d $d ] || d=%{_sysconfdir}/rpm; echo $d)
 
 Name: R
-Version: 3.2.3
+Version: 3.2.4
 Release: 1%{?dist}
 Summary: A language for data analysis and graphics
 URL: http://www.r-project.org
@@ -957,6 +957,9 @@ R CMD javareconf \
 %postun -n libRmath -p /sbin/ldconfig
 
 %changelog
+* Mon Oct 05 2015 Sören Möller <soerenmoeller2001@gmail.com> 3.2.4-1
+- 
+
 * Mon Oct 05 2015 Unknown name <soerenmoeller2001@gmail.com> 3.2.3-1
 - new package built with tito
 
