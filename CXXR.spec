@@ -50,8 +50,8 @@
 %global macrosdir %(d=%{_rpmconfigdir}/macros.d; [ -d $d ] || d=%{_sysconfdir}/rpm; echo $d)
 
 Name: R
-Version: 3.2.5
-Release: 3%{?dist}
+Version: 3.2.6
+Release: 1%{?dist}
 Summary: A language for data analysis and graphics
 URL: http://www.r-project.org
 Source0: ftp://cran.r-project.org/pub/R/src/base/R-3/R-%{version}.tar.gz
@@ -957,6 +957,9 @@ R CMD javareconf \
 %postun -n libRmath -p /sbin/ldconfig
 
 %changelog
+* Mon Oct 05 2015 Sören Möller <soerenmoeller2001@gmail.com> 3.2.6-1
+- 
+
 * Mon Oct 05 2015 Sören Möller <soerenmoeller2001@gmail.com> 3.2.5-3
 - 
 
