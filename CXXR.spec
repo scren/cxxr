@@ -49,14 +49,12 @@
 
 %global macrosdir %(d=%{_rpmconfigdir}/macros.d; [ -d $d ] || d=%{_sysconfdir}/rpm; echo $d)
 
-Name: R
-Version: 3.2.6
+Name: CXXR
+Version: 3.2.7
 Release: 1%{?dist}
 Summary: A language for data analysis and graphics
 URL: http://www.r-project.org
 Source0: ftp://cran.r-project.org/pub/R/src/base/R-3/R-%{version}.tar.gz
-Source1: macros.R
-Source2: R-make-search-index.sh
 License: GPLv2+
 Group: Applications/Engineering
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
@@ -957,6 +955,9 @@ R CMD javareconf \
 %postun -n libRmath -p /sbin/ldconfig
 
 %changelog
+* Mon Oct 05 2015 Sören Möller <soerenmoeller2001@gmail.com> 3.2.7-1
+- new package built with tito
+
 * Mon Oct 05 2015 Sören Möller <soerenmoeller2001@gmail.com> 3.2.6-1
 - 
 
